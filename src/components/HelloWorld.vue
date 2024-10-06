@@ -15,6 +15,9 @@ defineProps({
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <el-button type = "primary" size = "default">
+      Open the project
+    </el-button>
   </div>
 </template>
 
