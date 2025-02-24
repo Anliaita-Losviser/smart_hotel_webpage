@@ -1,10 +1,4 @@
-<template>
-  <el-breadcrumb :separator-icon="ArrowRight" class="bread">
-    <el-breadcrumb-item :to="{ path: item.path }" :key="item.title" v-for="item in tabs">
-      {{item.meta.title}}
-    </el-breadcrumb-item>
-  </el-breadcrumb>
-</template>
+
 
 <script setup>
 import { watch } from 'vue';
@@ -33,6 +27,16 @@ watch(
   ()=> getBreadcrumb(),
 )
 </script>
+
+<template>
+  <el-divider style="margin: 8px"/>
+  <el-breadcrumb :separator-icon="ArrowRight" class="bread">
+    <el-breadcrumb-item :to="{ path: item.path }" :key="item.title" v-for="item in tabs">
+      {{item.meta.title}}
+    </el-breadcrumb-item>
+  </el-breadcrumb>
+  <el-divider style="margin: 8px"/>
+</template>
 
 <style lang="less">
 .bread {

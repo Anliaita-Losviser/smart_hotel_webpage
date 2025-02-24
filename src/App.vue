@@ -26,10 +26,7 @@ import BreadCrumb from './components/BreadCrumb.vue';
 .layout {
   height: 100%;
   .header {
-    align-content: center;
-  }
-  .main {
-    background-color: wheat;
+    align-content: end;
   }
 }
 </style>
