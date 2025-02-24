@@ -1,14 +1,8 @@
 <template>
   <div class="expandButton">
-    <el-icon :size="36" style="width: 100%; height: 100%">
+    <el-icon :size="24" style="width: 100%; height: 100%">
       <Expand
         @click="changeCollapse"
-        style="
-          border-style: solid;
-          border-width: 2px;
-          border-radius: 10%;
-          border-color: lightcyan;
-        "
       />
     </el-icon>
   </div>
@@ -97,9 +91,6 @@ const changeCollapse = () => {
 }
 .el-menu-vertical {
   border: none;
-  //background-color: darkcyan;
-  --el-menu-bg-color: darkcyan;
-  --el-menu-active-color: lightcyan;
 }
 
 .expandButton {
